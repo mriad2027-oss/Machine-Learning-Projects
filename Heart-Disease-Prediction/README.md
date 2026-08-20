@@ -9,6 +9,8 @@ visualizes the prediction as it comes in.
 ⚠️ **This is an educational project, not a medical tool.** Predictions
 are not a diagnosis and should never replace professional medical advice.
 
+Live App :- https://machine-learning-projects-n57kxks8yd2unap4mvibpy.streamlit.app/
+
 ---
 
 ## Features
