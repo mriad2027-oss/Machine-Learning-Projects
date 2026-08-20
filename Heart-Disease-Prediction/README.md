@@ -41,7 +41,7 @@ or fit anything itself.
 
 ## Setup
 
-1. **Clone / download the project** and make sure `cardioai_app.py`,
+1. **Clone / download the project** and make sure `app.py`,
    `logistic_model.pkl`, and `scaler.pkl` are all in the same folder.
 
 2. **Install dependencies:**
@@ -53,7 +53,7 @@ or fit anything itself.
 3. **Run the app:**
 
    ```bash
-   streamlit run cardioai_app.py
+   streamlit run app.py
    ```
 
 4. Open the URL Streamlit prints in your terminal (usually
