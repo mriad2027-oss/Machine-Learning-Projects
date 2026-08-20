@@ -29,7 +29,7 @@ are not a diagnosis and should never replace professional medical advice.
 
 ```
 .
-├── cardioai_app.py       # Main Streamlit application
+├── app.py       # Main Streamlit application
 ├── logistic_model.pkl    # Pre-trained Logistic Regression model
 ├── scaler.pkl            # StandardScaler fitted to match the model
 └── README.md
