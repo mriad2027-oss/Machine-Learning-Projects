@@ -19,17 +19,20 @@ st.set_page_config(
 # a missing .pkl file used to crash with a raw traceback)
 # =========================================================
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+
 try:
-    model = joblib.load("logistic_model.pkl")
-    scaler = joblib.load("scaler.pkl")
+    model = joblib.load(BASE_DIR / "logistic_model.pkl")
+    scaler = joblib.load(BASE_DIR / "scaler.pkl")
 except FileNotFoundError as e:
     st.error(
         "⚠ Could not load the model files (`logistic_model.pkl` / `scaler.pkl`). "
-        "Make sure both files are in the same folder as this script.\n\n"
+        "Make sure both files are inside the Heart-Disease-Prediction folder.\n\n"
         f"Details: {e}"
     )
     st.stop()
-
 
 # =========================================================
 # HTML RENDER HELPER  (THE MAIN FIX)
